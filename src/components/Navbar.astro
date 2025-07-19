@@ -1,0 +1,80 @@
+---
+// Navbar.astro
+---
+
+<nav class="bg-white h-[10vh]">
+  <div class="flex flex-wrap items-center justify-between px-12 py-8">
+    <a href="/" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em]">
+      Mélanie Albert
+    </a>
+    
+    <button 
+      data-collapse-toggle="navbar-default" 
+      type="button" 
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-primary rounded-lg md:hidden hover:bg-gray-100 focus:outline-none" 
+      aria-controls="navbar-default" 
+      aria-expanded="false"
+    >
+      <span class="sr-only">Abrir menú principal</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+
+    <div class="hidden w-full md:block md:w-auto z-1000" id="navbar-default">
+      <ul class="flex flex-col p-4 mt-4 rounded-lg bg-pink md:flex-row md:space-x-12 md:mt-0 md:border-0 md:bg-white">
+        <li>
+          <a href="/branding" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em] block py-2 md:p-0 hover:opacity-80">branding</a>
+        </li>
+        <li>
+          <a href="/diseno" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em] block py-2 md:p-0 hover:opacity-80">diseño</a>
+        </li>
+        <li>
+          <a href="/social-media" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em] block py-2 md:p-0 hover:opacity-80">social media</a>
+        </li>
+        <li>
+          <a href="/fotografias" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em] block py-2 md:p-0 hover:opacity-80">fotografías</a>
+        </li>
+        <li>
+          <a href="/contact" class="font-['Inter_Variable'] text-primary font-semibold text-2xl tracking-[-0.08em] block py-2 md:p-0 hover:opacity-80">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Necesitamos un poco de JS solo para el toggle del menú
+  const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
+  const menu = document.getElementById('navbar-default');
+  
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+    button.setAttribute('aria-expanded', menu?.classList.contains('hidden') ? 'false' : 'true');
+  });
+</script>
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: white;
+  }
+
+  .nav-links a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+
+  a {
+      font-family: 'Inter Variable', sans-serif;
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.08em;
+  }
+
+  /* Añade más estilos según necesites */
+</style>
