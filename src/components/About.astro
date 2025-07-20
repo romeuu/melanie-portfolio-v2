@@ -1,15 +1,25 @@
 ---
-import illustration from '../assets/illustration-melanie.png';
+import illustration from '../assets/landing/illustration-melanie.png';
+import star from '../assets/landing/star-about.svg';
+import { Image } from 'astro:assets';
+import hobbie1 from '../assets/landing/hobbie-1.svg';
+import hobbie2 from '../assets/landing/hobbie-2.svg';
+import hobbie3 from '../assets/landing/hobbie-3.svg';
+import hobbie4 from '../assets/landing/hobbie-4.svg';
+import hobbie5 from '../assets/landing/hobbie-5.svg';
 ---
 
 <section class="relative min-h-[100vh] mt-[10vh] pt-5 md:pt-20">
     <div class="container mx-auto p-4 md:px-8 flex justify-center">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <div class="w-full">
-                <img 
-                    src={illustration.src} 
+                <Image 
+                    src={illustration} 
                     alt="Mélanie Albert" 
                     class="w-full h-full object-cover rounded-lg" 
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
                 />
             </div>
             <div class="w-full space-y-6">
@@ -26,6 +36,51 @@ import illustration from '../assets/illustration-melanie.png';
                     <p class="font-['Inter_Variable'] text-primary/90 text-lg md:text-xl leading-relaxed tracking-[-0.02em]">
                         Ahora vivo en Galicia, donde sigo descubriendo nuevas culturas y creciendo personal y profesionalmente. Creativa, organizada y siempre con positividad, ¡me encanta sumar energía positiva a todo lo que hago! <span class="text-2xl">💫🎨✨</span>
                     </p>
+                </div>
+                <div class="space-y-4 relative">
+                    <button class="relative group px-4 py-1 text-3xl font-['Libre_Baskerville'] italic font-extralight tracking-[-0.06em] text-white before:absolute before:inset-0 before:bg-pink-300 before:rounded-full before:blur-[2px] before:-z-10">
+                        <Image 
+                            src={star} 
+                            alt="Imagen de una estrella" 
+                            class="absolute -top-6 -right-5 w-12 h-12 animate-pulse"
+                            loading="lazy"
+                            decoding="async"
+                            fetchpriority="low"
+                        />
+                        <span class="relative z-10">hobbies</span>
+                    </button>
+                    <div class="grid grid-cols-5 gap-4 mt-5">
+                        <div class="flex flex-col items-center">
+                            <div class="h-14 flex items-center justify-center">
+                                <Image src={hobbie1} alt="Imagen de dos fotos" class="w-50 h-50" />
+                            </div>
+                            <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">tomar fotos</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-14 flex items-center justify-center">
+                                <Image src={hobbie2} alt="Imagen de un pincel con pintura" class="w-50 h-50" />
+                            </div>
+                            <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">crear cosas</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-14 flex items-center justify-center">
+                                <Image src={hobbie3} alt="Imagen de un micrófono" class="w-50 h-50" />
+                            </div>
+                            <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">ir a conciertos</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-14 flex items-center justify-center">
+                                <Image src={hobbie4} alt="Imagen de un avión" class="w-50 h-50" />
+                            </div>
+                            <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">viajar</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="h-14 flex items-center justify-center">
+                                <Image src={hobbie5} alt="Imagen de un ordenador" class="w-50 h-50" />
+                            </div>
+                            <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">diseñar</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
