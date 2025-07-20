@@ -1,12 +1,18 @@
 ---
 import background from '../assets/landing/bg-home.svg';
+import { Image } from 'astro:assets';
 ---
 
-<section 
-    class="relative min-h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden py-20" 
-    style={`background-image: url(${background.src})`}
->
-    <div class="container mx-auto px-4 md:px-8 flex justify-center">
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-hidden py-20">
+    <Image 
+        src={background} 
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+        decoding="sync"
+    />
+    <div class="container mx-auto px-4 md:px-8 flex justify-center relative z-10">
         <div class="max-w-4xl w-full">
             <h1 class="flex flex-col md:text-left text-center">
                 <span class="font-['Libre_Baskerville'] text-primary italic font-semibold 

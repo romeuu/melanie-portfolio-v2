@@ -2,11 +2,11 @@
 import illustration from '../assets/landing/illustration-melanie.png';
 import star from '../assets/landing/star-about.svg';
 import { Image } from 'astro:assets';
-import hobbie1 from '../assets/landing/hobbie-1.svg';
-import hobbie2 from '../assets/landing/hobbie-2.svg';
-import hobbie3 from '../assets/landing/hobbie-3.svg';
-import hobbie4 from '../assets/landing/hobbie-4.svg';
-import hobbie5 from '../assets/landing/hobbie-5.svg';
+import Hobbie1Icon from '../assets/landing/hobbie-1.svg';
+import Hobbie2Icon from '../assets/landing/hobbie-2.svg';
+import Hobbie3Icon from '../assets/landing/hobbie-3.svg';
+import Hobbie4Icon from '../assets/landing/hobbie-4.svg';
+import Hobbie5Icon from '../assets/landing/hobbie-5.svg';
 ---
 
 <section class="relative min-h-[100vh] mt-[10vh] pt-5 md:pt-20">
@@ -19,7 +19,7 @@ import hobbie5 from '../assets/landing/hobbie-5.svg';
                     class="w-full h-full object-cover rounded-lg" 
                     loading="lazy"
                     decoding="async"
-                    fetchpriority="low"
+                                    client:visible
                 />
             </div>
             <div class="w-full space-y-6">
@@ -45,38 +45,38 @@ import hobbie5 from '../assets/landing/hobbie-5.svg';
                             class="absolute -top-6 -right-5 w-12 h-12 animate-pulse"
                             loading="lazy"
                             decoding="async"
-                            fetchpriority="low"
+                                    client:visible
                         />
                         <span class="relative z-10">hobbies</span>
                     </button>
                     <div class="grid grid-cols-5 gap-4 mt-5">
                         <div class="flex flex-col items-center">
                             <div class="h-14 flex items-center justify-center">
-                                <Image src={hobbie1} alt="Imagen de dos fotos" class="w-50 h-50" />
+                                <Hobbie1Icon class="w-50 h-50" />
                             </div>
                             <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">tomar fotos</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="h-14 flex items-center justify-center">
-                                <Image src={hobbie2} alt="Imagen de un pincel con pintura" class="w-50 h-50" />
+                                <Hobbie2Icon class="w-50 h-50" />
                             </div>
                             <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">crear cosas</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="h-14 flex items-center justify-center">
-                                <Image src={hobbie3} alt="Imagen de un micrófono" class="w-50 h-50" />
+                                <Hobbie3Icon class="w-50 h-50" />
                             </div>
                             <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">ir a conciertos</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="h-14 flex items-center justify-center">
-                                <Image src={hobbie4} alt="Imagen de un avión" class="w-50 h-50" />
+                                <Hobbie4Icon class="w-50 h-50" />
                             </div>
                             <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">viajar</p>
                         </div>
                         <div class="flex flex-col items-center">
                             <div class="h-14 flex items-center justify-center">
-                                <Image src={hobbie5} alt="Imagen de un ordenador" class="w-50 h-50" />
+                                <Hobbie5Icon class="w-50 h-50" />
                             </div>
                             <p class="text-primary/90 text-lg font-['Inter_Variable'] tracking-[-0.07em] mt-5">diseñar</p>
                         </div>
