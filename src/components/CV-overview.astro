@@ -1,16 +1,30 @@
+---
+import illustration from '../assets/landing/illustration-melanie.png';
+import heart from '../assets/landing/heart-cv.svg';
+import { Image } from 'astro:assets';
+---
+
 <section class="relative min-h-[100vh] mt-[10vh] pt-5 md:pt-20">
-    <div class="container mx-auto p-4 md:px-8 flex justify-start">
+    <!-- Elementos decorativos -->
+    <Image 
+        src={heart} 
+        alt=""
+        class="absolute top-0 md:top-0 right-0 w-32 h-32 md:w-125 md:h-125"
+    />
+
+    <!-- Contenido existente -->
+    <div class="container mx-auto p-4 md:px-8 flex justify-start relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <div class="w-full">
+                <h2 class="text-5xl md:text-6xl text-primary font-bold font-['Inter_Variable'] tracking-[-0.03em] flex flex-col">
+                    <span class="font-['Inter_Variable'] text-primary font-semibold 
+                    text-6xl md:text-7xl lg:text-8xl 
+                    tracking-[-0.07em]">Currículum</span>
+                    <span class="font-['Inter_Variable'] text-primary font-bold 
+                    text-5xl md:text-6xl lg:text-7xl 
+                    tracking-[-0.07em]">Vitae <span class="text-pink">2025</span></span>
+                </h2>
                 <div class="flex flex-col">
-                    <h2 class="text-5xl md:text-6xl text-primary font-bold font-['Inter_Variable'] tracking-[-0.03em] flex flex-col">
-                        <span class="font-['Inter_Variable'] text-primary font-semibold 
-                        text-6xl md:text-7xl lg:text-8xl 
-                        tracking-[-0.07em]">Currículum</span>
-                        <span class="font-['Inter_Variable'] text-primary font-bold 
-                        text-5xl md:text-6xl lg:text-7xl 
-                        tracking-[-0.07em]">Vitae <span class="text-pink">2025</span></span>
-                    </h2>
                     <div class="mt-10">
                         <h3 class="font-['Libre_Baskerville'] text-primary 
                         text-2xl md:text-2xl lg:text-3xl italic tracking-[-0.06em] font-extralight">educación</h3>
@@ -64,7 +78,108 @@
                 </div>
             </div>
             <div class="w-full">
+                <div class="mb-16">
+                    <h3 class="font-['Poppins'] text-pink text-2xl md:text-2xl lg:text-3xl tracking-[-0.06em] font-bold mb-2">
+                        software
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Adobe Illustrator</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Adobe Photoshop</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Adobe InDesign</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Canva</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Capcut</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Figma</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Google Analytics</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Meltwater</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Meta Business Suite</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Metricool</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Notion</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Semrush</p>
+                    </div>
+                </div>
 
+                <div>
+                    <h3 class="font-['Poppins'] text-pink text-2xl md:text-2xl lg:text-3xl tracking-[-0.06em] font-extrabold mb-2">
+                        conocimiento
+                    </h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">01 - Social Media</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">02 - Diseño Gráfico</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">03 - Gestión de Comunidad</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">04 - Grabación y edición de vídeos</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">05 - Estrategia de Marketing</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">06 - Copywriting - redacción y storytelling</p>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <h3 class="font-['Poppins'] text-pink text-2xl md:text-2xl lg:text-3xl tracking-[-0.06em] font-extrabold mb-2">
+                        habilidades blandas
+                    </h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">01 - Creatividad</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">02 - Comunicación</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">03 - Organización</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">04 - Curiosidad</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">05 - Proactividad</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">06 - Responsable</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">07 - Trabajo en equipo</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">08 - Comunicación Asertiva</p>
+                        <p class="font-['Inter_Variable'] text-primary font-extralight 
+                        text-xl md:text-xl lg:text-xl tracking-[-0.07em]">09 - Adaptabilidad</p>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <h3 class="font-['Poppins'] text-pink text-2xl md:text-2xl lg:text-3xl tracking-[-0.06em] font-extrabold mb-2">
+                        idiomas
+                    </h3>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="flex flex-col">
+                            <p class="font-['Inter_Variable'] text-primary font-bold 
+                            text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Francés</p>
+                            <p class="font-['Inter_Variable'] text-primary font-extralight 
+                            text-lg md:text-lg lg:text-lg tracking-[-0.07em]">Nativo</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="font-['Inter_Variable'] text-primary font-bold 
+                            text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Inglés</p>
+                            <p class="font-['Inter_Variable'] text-primary font-extralight 
+                            text-lg md:text-lg lg:text-lg tracking-[-0.07em]">Nivel C1</p>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="font-['Inter_Variable'] text-primary font-bold 
+                            text-xl md:text-xl lg:text-xl tracking-[-0.07em]">Español</p>
+                            <p class="font-['Inter_Variable'] text-primary font-extralight 
+                            text-lg md:text-lg lg:text-lg tracking-[-0.07em]">Nivel C1</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
