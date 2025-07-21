@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<section class="relative min-h-[100vh] mt-[10vh] pt-6 md:pt-20">
+    <div class="container mx-auto p-4 md:px-8">
+        <div class="w-fit mb-16">
+            <button class="relative group px-4 py-1 text-3xl font-['Poppins'] font-extralight tracking-[-0.06em] text-white before:absolute before:inset-0 before:bg-pink-300 before:rounded-full before:blur-[2px] before:-z-10">
+                <span class="relative z-10">proyectos</span>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+            <a href="/branding" class="flex flex-col text-left group">
+                <span class="font-['Inter_Variable'] text-primary text-2xl md:text-3xl tracking-[-0.07em] mb-2 pl-1 group-hover:opacity-80 transition-opacity">
+                    branding
+                </span>
+                <span class="font-['Inter_Variable'] text-primary font-bold text-8xl md:text-9xl tracking-[-0.07em] leading-none -ml-2 group-hover:opacity-80 transition-opacity">01</span>
+            </a>
+            <a href="/diseno" class="flex flex-col text-left group">
+                <span class="font-['Inter_Variable'] text-primary text-2xl md:text-3xl tracking-[-0.07em] mb-2 pl-1 group-hover:opacity-80 transition-opacity">
+                    diseño
+                </span>
+                <span class="font-['Inter_Variable'] text-pink font-bold text-8xl md:text-9xl tracking-[-0.07em] leading-none -ml-2 group-hover:opacity-80 transition-opacity">02</span>
+            </a>
+            <a href="/social-media" class="flex flex-col text-left group">
+                <span class="font-['Inter_Variable'] text-primary text-2xl md:text-3xl tracking-[-0.07em] mb-2 pl-1 group-hover:opacity-80 transition-opacity">
+                    social media
+                </span>
+                <span class="font-['Inter_Variable'] text-primary font-bold text-8xl md:text-9xl tracking-[-0.07em] leading-none -ml-2 group-hover:opacity-80 transition-opacity">03</span>
+            </a>
+            <a href="/fotografia" class="flex flex-col text-left group">
+                <span class="font-['Inter_Variable'] text-primary text-2xl md:text-3xl tracking-[-0.07em] mb-2 pl-1 group-hover:opacity-80 transition-opacity">
+                    fotografía
+                </span>
+                <span class="font-['Inter_Variable'] text-pink font-bold text-8xl md:text-9xl tracking-[-0.07em] leading-none -ml-2 group-hover:opacity-80 transition-opacity">04</span>
+            </a>
+            <a href="/contact" class="flex flex-col text-left group">
+                <span class="font-['Inter_Variable'] text-primary text-2xl md:text-3xl tracking-[-0.07em] mb-2 pl-1 group-hover:opacity-80 transition-opacity">
+                    contact
+                </span>
+                <span class="font-['Inter_Variable'] text-primary font-bold text-8xl md:text-9xl tracking-[-0.07em] leading-none -ml-2 group-hover:opacity-80 transition-opacity">05</span>
+            </a>
+        </div>
+    </div>
+</section>
