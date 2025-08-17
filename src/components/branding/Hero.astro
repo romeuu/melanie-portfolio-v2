@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import illustration from '../../assets/branding/duck-hero.svg';
+---
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-pink-50">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h1 class="md:text-left text-left">
+                    <span class="font-['Libre_Baskerville'] text-primary italic 
+                        text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] 
+                        tracking-[-0.07em]">
+                        illustration
+                    </span>
+                    <span class="font-['Poppins'] text-primary font-bold mt-5 mb-5
+                        text-5xl md:text-6xl lg:text-7xl xl:text-9xl 
+                        tracking-[-0.07em] leading-[0.9]">
+                        that will bring your brand
+                    </span>
+                    <span class="relative inline-block font-['Libre_Baskerville'] text-primary italic mt-5
+                        text-5xl md:text-6xl lg:text-7xl xl:text-9xl tracking-[-0.07em] leading-[0.9] z-10">
+                        <span class="absolute top-1/3 left-[10%] right-[10%] h-[50%] 
+                            bg-pink-300 rounded-full blur-md z-[-1]"></span>
+                        to life.
+                    </span>
+                </h1>
+            </div>
+            <div class="w-full">
+                <Image 
+                    src={illustration} 
+                    alt="Mélanie Albert" 
+                    class="w-full h-full object-cover rounded-lg mt-10" 
+                    loading="lazy"
+                    decoding="async"
+                />
+            </div>
+        </div>
+    </div>
+</section>
