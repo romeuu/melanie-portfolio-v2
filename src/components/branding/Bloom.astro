@@ -1,0 +1,97 @@
+---
+import { Picture } from 'astro:assets';
+import bloom from '../../assets/branding/logobloomrose.png';
+import bloomBackground from '../../assets/branding/logobloomrose-background.png';
+import bloomBackground2 from '../../assets/branding/logobloomorange.png';
+---
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <h2 class="font-['Poppins'] text-primary font-bold mt-5 mb-5
+        text-5xl md:text-6xl lg:text-6xl xl:text-8xl
+        tracking-[-0.07em] leading-[0.9]">branding.</h2>
+
+        <div class="flex items-center w-full">
+            <h3 class="font-['Libre_Baskerville'] text-primary italic mt-5 mb-5
+            text-xl md:text-2xl lg:text-2xl xl:text-2xl
+            tracking-[-0.07em] leading-[0.9]">bloom</h3>
+            <div class="flex-1 border-b border-dotted border-primary ml-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl
+                tracking-[-0.07em] leading-[0.9]">qué es bloom?</h4>
+    
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                Bloom es una marca ficticia de perfumes que creé como parte de un proyecto de diseño de identidad visual. La marca está pensada como juvenil, afrutada y vibrante, dirigida a un público joven y creativo. Su concepto gira en torno a un universo mágico, lúdico y colorido, que evoca la idea de emociones que florecen y experiencias sensoriales.
+                </p>
+
+                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl
+                tracking-[-0.07em] leading-[0.9]">herramientas</h4>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                    Photoshop e Illustrator
+                </p>
+            </div>
+            <div class="w-full">
+                <Picture src={bloom} formats={['avif','webp', 'png']} alt="Logotipo de Bloom"/>
+            </div>
+         </div>
+    </div>
+</section>
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-3 gap-0 text-center items-center justify-center">
+            <div class="col-span-12 md:col-span-1" style="background-color: #0D2911;">
+                <h4 class="font-['Poppins'] text-white font-bold mt-5 mb-5
+                text-2xl md:text-3xl lg:text-3xl xl:text-4xl
+                tracking-[-0.07em] leading-[0.9]">
+                #0D2911
+                </h4>
+            </div>
+            <div class="col-span-12 md:col-span-1" style="background-color: #ECB2CC;">
+                <h4 class="font-['Poppins'] text-white font-bold mt-5 mb-5
+                text-2xl md:text-3xl lg:text-3xl xl:text-4xl
+                tracking-[-0.07em] leading-[0.9]">
+                #ECB2CC
+                </h4>
+            </div>
+            <div class="col-span-12 md:col-span-1" style="background-color: #F2930C;">
+                <h4 class="font-['Poppins'] text-white font-bold mt-5 mb-5
+                text-2xl md:text-3xl lg:text-3xl xl:text-4xl
+                tracking-[-0.07em] leading-[0.9]">
+                #F2930C
+                </h4>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mt-10">
+            <div class="w-full">
+                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl
+                tracking-[-0.07em] leading-[0.9]">identidad visual</h4>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                La identidad visual de la marca transmite un universo afrutado, juvenil y vibrante, pensado para un público creativo. Los colores vivos, las formas orgánicas y los contrastes marcados refuerzan una atmósfera mágica y lúdica.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                El logotipo multicolor se adapta a diferentes soportes y expresa la diversidad olfativa de los perfumes. Las formas gráficas añadidas —similares a flores o gotas— aportan dinamismo, rompen con la rigidez tipográfica y evocan sensaciones sensoriales.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl font-bold w-full">
+                Se buscó crear una identidad flexible y emocional, capaz de evolucionar sin perder coherencia. Cada elemento gráfico fue cuidadosamente elegido para conectar con el imaginario de una marca fresca, alegre y en constante floración.                </p>
+            </div>
+            <div class="w-full">
+                <Picture src={bloomBackground} formats={['avif','webp', 'png']} alt="Fondo de Bloom 1" class="rounded-4xl mb-5"/>
+                <Picture src={bloomBackground2} formats={['avif','webp', 'png']} alt="Fondo de Bloom 2" class="rounded-4xl"/>
+            </div>
+        </div>
+</section>
