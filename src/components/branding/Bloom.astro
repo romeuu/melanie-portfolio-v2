@@ -3,6 +3,9 @@ import { Picture } from 'astro:assets';
 import bloom from '../../assets/branding/logobloomrose.png';
 import bloomBackground from '../../assets/branding/logobloomrose-background.png';
 import bloomBackground2 from '../../assets/branding/logobloomorange.png';
+import bloomCartel from '../../assets/branding/bloominpost_err.webp';
+import bloomCartel2 from '../../assets/branding/bloominposterxxx.webp';
+
 ---
 <section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
     <div class="container mx-auto px-4 md:px-8">
@@ -28,7 +31,7 @@ import bloomBackground2 from '../../assets/branding/logobloomorange.png';
                 Bloom es una marca ficticia de perfumes que creé como parte de un proyecto de diseño de identidad visual. La marca está pensada como juvenil, afrutada y vibrante, dirigida a un público joven y creativo. Su concepto gira en torno a un universo mágico, lúdico y colorido, que evoca la idea de emociones que florecen y experiencias sensoriales.
                 </p>
 
-                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                <h4 class="font-['Poppins'] text-pink font-bold mt-10 mb-5
                 text-3xl md:text-4xl lg:text-4xl xl:text-5xl
                 tracking-[-0.07em] leading-[0.9]">herramientas</h4>
 
@@ -38,7 +41,7 @@ import bloomBackground2 from '../../assets/branding/logobloomorange.png';
                 </p>
             </div>
             <div class="w-full">
-                <Picture src={bloom} formats={['avif','webp', 'png']} alt="Logotipo de Bloom"/>
+                <Picture src={bloom} formats={['avif','webp', 'png']} alt="Logotipo de Bloom" loading="lazy"/>
             </div>
          </div>
     </div>
@@ -90,8 +93,53 @@ import bloomBackground2 from '../../assets/branding/logobloomorange.png';
                 Se buscó crear una identidad flexible y emocional, capaz de evolucionar sin perder coherencia. Cada elemento gráfico fue cuidadosamente elegido para conectar con el imaginario de una marca fresca, alegre y en constante floración.                </p>
             </div>
             <div class="w-full">
-                <Picture src={bloomBackground} formats={['avif','webp', 'png']} alt="Fondo de Bloom 1" class="rounded-4xl mb-5"/>
-                <Picture src={bloomBackground2} formats={['avif','webp', 'png']} alt="Fondo de Bloom 2" class="rounded-4xl"/>
+                <Picture src={bloomBackground} formats={['avif','webp', 'png']} alt="Fondo de Bloom 1" class="rounded-4xl mb-5" loading="lazy"/>
+                <Picture src={bloomBackground2} formats={['avif','webp', 'png']} alt="Fondo de Bloom 2" class="rounded-4xl" loading="lazy"/>
             </div>
         </div>
+</section>
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl
+                tracking-[-0.07em] leading-[0.9]">cartel publicitario</h4>
+    
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                    Para esta campaña pensada para ser visible en toda la ciudad, creé un universo suave, onírico y sensorial, inspirado en las flores, el perfume y la magia de la primavera.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                    El eslogan «it takes courage to bloom» transmite una idea poderosa: hace falta valentía para florecer. Al igual que una flor, cada persona atraviesa momentos de sombra antes de mostrarse en su máxima expresión. 🌱
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                    Los visuales combinan luces suaves, colores vivos y formas orgánicas para expresar una sensación de crecimiento, ternura y transformación.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full font-bold">
+                    El universo visual evoca un mundo poético y vibrante, pensado para una marca de perfumes alegre, emocional y en constante evolución.
+                </p>
+
+                <h4 class="font-['Poppins'] text-pink font-bold mt-10 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl
+                tracking-[-0.07em] leading-[0.9]">herramientas</h4>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                    Photoshop
+                </p>
+            </div>
+            <div class="w-full flex flex-col md:flex-row items-center justify-center gap-5">
+                <Picture src={bloomCartel} formats={['avif','webp', 'png']} alt="Cartel de Bloom" class="w-100" loading="lazy"/>
+                <Picture src={bloomCartel2} formats={['avif','webp', 'png']} alt="Cartel de Bloom alternativo" class="w-100" loading="lazy"/>
+            </div>
+         </div>
+    </div>
 </section>
