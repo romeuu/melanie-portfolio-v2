@@ -7,5 +7,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  output: 'static'
+  output: 'static',
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  }
 });
