@@ -1,0 +1,34 @@
+---
+import { Picture } from 'astro:assets';
+import illustration from '../../assets/contacto/hero-contacto.svg';
+---
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-[#D7FFCF]">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-[75%_25%] gap-6 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h1 class="md:text-left text-left leading-[0.85]">
+                    <span class="block font-['Poppins'] text-primary font-bold
+                        text-6xl md:text-7xl lg:text-8xl xl:text-[9rem]
+                        tracking-[-0.07em]">
+                        please, contact
+                    </span>
+                    <span class="relative inline-block font-['Libre_Baskerville'] text-primary italic mt-5
+                        text-5xl md:text-6xl lg:text-7xl xl:text-9xl tracking-[-0.07em] leading-[0.9] z-10">
+                        me!!!!!
+                    </span>
+                </h1>
+            </div>
+            <div class="w-full relative flex justify-center md:justify-end md:items-end">
+                <Picture 
+                    src={illustration} 
+                    alt="Snake" 
+                    class="object-contain mt-10 w-[240px] md:w-[360px] lg:w-[480px] xl:w-[560px] translate-y-2 md:translate-y-4" 
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="sync"
+                    formats={['avif','webp', 'png']}
+                />
+            </div>
+        </div>
+    </div>
+</section>
