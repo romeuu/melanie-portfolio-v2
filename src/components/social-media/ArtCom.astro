@@ -1,0 +1,71 @@
+---
+import { Picture } from 'astro:assets';
+import social1 from '../../assets/social-media/social-1.png';
+import social2 from '../../assets/social-media/social-2.png';
+import social3 from '../../assets/social-media/social-3.png';
+---
+
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white"> 
+    <!-- Círculo de degradado decorativo -->
+    <div class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full bg-gradient-to-br from-lime-200 via-sky-100 to-purple-200 opacity-60 blur-3xl"></div>
+    
+    <div class="container mx-auto px-4 md:px-8 py-12 relative z-10">
+
+        <div class="flex justify-between items-center w-full bg-[#2b5a8e] text-white px-6 py-2 rounded-full mb-6">
+            <span class="font-['Poppins'] text-sm md:text-base font-semibold tracking-wide">art&com</span>
+            <span class="font-['Poppins'] text-sm md:text-base font-light ml-4 italic">2024</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h3 class="font-['Poppins'] text-pink font-bold mb-4
+                text-4xl md:text-5xl lg:text-5xl xl:text-6xl
+                tracking-[-0.02em] leading-[1.1]">
+                    proyecto<br/>
+                    <span class="font-['Libre_Baskerville'] italic font-normal">universitario</span>
+                </h3>
+
+                <p class="font-['Poppins'] text-[#2b5a8e] mt-6 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                    En el marco de mi Máster en Cultura y Comunicación en la Universidad de Toulouse II, tuve la oportunidad de crear y gestionar desde cero la cuenta de Instagram del máster Art & Com.
+                </p>
+
+                <p class="font-['Poppins'] text-[#2b5a8e] mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
+                    Responsable de la identidad visual, establecí desde cero una estrategia de contenido alineada con los valores del programa. Además, colaboré con otras cuentas oficiales de la universidad, compartí artículos del blog y proyectos de los estudiantes, y gestioné la comunidad en redes sociales.
+                </p>
+
+                <p class="font-['Poppins'] text-[#2b5a8e] mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full font-bold">
+                    Esta experiencia fue muy enriquecedora: logré hacer crecer la comunidad con más de cien seguidores nuevos y mantener una presencia activa y coherente en la cuenta.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+                <div class="w-full flex flex-col justify-center items-center gap-4">
+                    <Picture 
+                        src={social2} 
+                        formats={['avif','webp', 'jpg']} 
+                        alt="Art&Com Instagram mockup 1" 
+                        class="w-full max-w-[180px] md:max-w-[220px] rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                    <Picture 
+                        src={social3} 
+                        formats={['avif','webp', 'jpg']} 
+                        alt="Art&Com Instagram mockup 2" 
+                        class="w-full max-w-[180px] md:max-w-[220px] rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="w-full flex flex-col justify-center items-center gap-4">
+                    <Picture 
+                        src={social1} 
+                        formats={['avif','webp', 'jpg']} 
+                        alt="Art&Com Instagram mockup 3" 
+                        class="w-full max-w-[280px] md:max-w-[340px] rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
