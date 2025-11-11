@@ -1,0 +1,65 @@
+---
+import { Picture } from 'astro:assets';
+import foto1 from '../../assets/fotografia/foto-1.jpg';
+import foto2 from '../../assets/fotografia/foto-2.jpg';
+import foto3 from '../../assets/fotografia/foto-3.jpg';
+import foto4 from '../../assets/fotografia/foto-4.jpg';
+import foto5 from '../../assets/fotografia/foto-5.jpg';
+import foto6 from '../../assets/fotografia/foto-6.jpg';
+import foto7 from '../../assets/fotografia/foto-7.jpg';
+import foto8 from '../../assets/fotografia/foto-8.jpg';
+import foto9 from '../../assets/fotografia/foto-9.jpg';
+import foto10 from '../../assets/fotografia/foto-10.jpg';
+import foto11 from '../../assets/fotografia/foto-11.jpg';
+import foto12 from '../../assets/fotografia/foto-12.jpg';
+---
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-[#00518f2c]">
+    <div class="container mx-auto px-4 md:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <Picture src={foto1} formats={['avif','webp', 'png']} alt="Fotografía 1" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto2} formats={['avif','webp', 'png']} alt="Fotografía 2" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto3} formats={['avif','webp', 'png']} alt="Fotografía 3" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto4} formats={['avif','webp', 'png']} alt="Fotografía 4" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto5} formats={['avif','webp', 'png']} alt="Fotografía 5" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto6} formats={['avif','webp', 'png']} alt="Fotografía 6" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-[#00518f2c]">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <Picture src={foto7} formats={['avif','webp', 'png']} alt="Fotografía 7" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto8} formats={['avif','webp', 'png']} alt="Fotografía 8" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto9} formats={['avif','webp', 'png']} alt="Fotografía 9" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto10} formats={['avif','webp', 'png']} alt="Fotografía 10" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto11} formats={['avif','webp', 'png']} alt="Fotografía 11" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+            <div class="w-full">
+                <Picture src={foto12} formats={['avif','webp', 'png']} alt="Fotografía 12" class="w-full h-full rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300" loading="lazy"/>
+            </div>
+        </div>
+    </div>
+</section>
