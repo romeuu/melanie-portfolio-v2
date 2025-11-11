@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import illustration from '../../assets/design/snake-hero.svg';
 ---
 
@@ -27,12 +27,14 @@ import illustration from '../../assets/design/snake-hero.svg';
                 </h1>
             </div>
             <div class="w-full relative flex justify-center md:justify-end md:items-end">
-                <Image 
+                <Picture 
                     src={illustration} 
-                    alt="Picture of a snake" 
+                    alt="Snake" 
                     class="object-contain mt-10 w-[240px] md:w-[360px] lg:w-[480px] xl:w-[560px] translate-y-2 md:translate-y-4" 
-                    loading="lazy"
-                    decoding="async"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="sync"
+                    formats={['avif','webp', 'png']}
                 />
             </div>
         </div>

@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import illustration from '../../assets/branding/duck-hero.svg';
 ---
 
@@ -27,12 +27,14 @@ import illustration from '../../assets/branding/duck-hero.svg';
                 </h1>
             </div>
             <div class="w-full">
-                <Image 
+                <Picture 
                     src={illustration} 
                     alt="Mélanie Albert" 
                     class="w-full h-full object-cover rounded-lg mt-10" 
-                    loading="lazy"
-                    decoding="async"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="sync"
+                    formats={['avif','webp', 'png']}
                 />
             </div>
         </div>
