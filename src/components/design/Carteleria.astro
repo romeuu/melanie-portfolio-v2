@@ -1,0 +1,54 @@
+---
+import { Picture } from 'astro:assets';
+import design1 from '../../assets/design/design-1.jpg';
+import design2 from '../../assets/design/design-2.jpg';
+import design3 from '../../assets/design/design-3.jpg';
+---
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div class="w-full">
+                <h2 class="font-['Poppins'] text-primary font-bold mt-5 mb-5
+                text-5xl md:text-6xl lg:text-6xl xl:text-8xl
+                tracking-[-0.07em] leading-[0.9]">diseño.</h2>
+                <div class="flex items-center w-full">
+                    <div class="flex-1 border-b border-dotted border-primary ml-4"></div>
+                </div>
+                <h4 class="font-['Poppins'] text-pink font-bold mt-5 mb-5
+                text-3xl md:text-4xl lg:text-4xl xl:text-5xl w-full lg:w-3/4
+                tracking-[-0.07em] leading-[1.2]">creación de carteles publicitarios para eventos</h4>
+    
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                En el marco de mi máster en Cultura y Comunicación en Toulouse, diseñé carteles para una exposición fotográfica universitaria titulada “Intro Extra”, organizada en el Centre Culturel Henri Desbals. También me encargué de la creación del logotipo y de diversos soportes gráficos para acompañar las fotografías expuestas.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                Uno de mis carteles fue seleccionado como afiche oficial de la exposición. El reto consistía en elegir, entre todas las imágenes disponibles, aquellas que mejor representaran la identidad y la esencia del evento, sin otras restricciones creativas.
+                </p>
+
+                <p class="font-['Poppins'] text-primary mt-5 mb-5
+                text-md md:text-lg lg:text-lg xl:text-xl w-full font-bold lg:w-3/4">
+                Este proyecto me permitió combinar libertad artística, análisis visual y coherencia gráfica en un cadre real de comunicación cultural.
+                </p>
+            </div>
+            <div class="w-full h-full flex justify-center items-center">
+                <Picture src={design1} formats={['avif','webp', 'png']} alt="Design 1" class="w-100" loading="lazy"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white py-8 md:py-12">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center max-h-[80vh]">
+            <div class="w-full h-full flex justify-center items-center">
+                <Picture src={design2} formats={['avif','webp', 'png']} alt="Design 2" class="max-h-[70vh] w-auto object-contain" loading="lazy"/>
+            </div>
+            <div class="w-full h-full flex justify-center items-center">
+                <Picture src={design3} formats={['avif','webp', 'png']} alt="Design 3" class="max-h-[70vh] w-auto object-contain" loading="lazy"/>
+            </div>
+        </div>
+    </div>
+</section>
