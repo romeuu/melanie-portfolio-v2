@@ -1,6 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
-import bloom from '../../assets/branding/logobloomrose.png';
+import elsDissabtesMain from '../../assets/branding/els-dissabtes-main.png';
+import elsDissabtesMag from '../../assets/branding/els-dissabtes-mag.jpg';
 import bloomBackground from '../../assets/branding/logobloomrose-background.png';
 import bloomBackground2 from '../../assets/branding/logobloomorange.png';
 import elsDissabtesHero1 from '../../assets/branding/els-dissabtes-hero-1.jpg';
@@ -8,11 +9,6 @@ import elsDissabtesHero2 from '../../assets/branding/els-dissabtes-hero-2.jpg';
 import elsDissabtesGrid1 from '../../assets/branding/els-dissabtes-tote.jpg';
 import elsDissabtesGrid2 from '../../assets/branding/els-dissabtes-camiseta.jpg';
 import elsDissabtesGrid3 from '../../assets/branding/els-dissabtes-taza.jpg';
-
-import bloomCartel from '../../assets/branding/bloominpost_err.webp';
-import bloomCartel2 from '../../assets/branding/bloominposterxxx.webp';
-import stars from '../../assets/branding/stars-bloom.svg';
-import { Image } from 'astro:assets';
 
 ---
 <section class="relative min-h-[100vh] flex items-center justify-center overflow-x-hidden bg-white">
@@ -31,12 +27,12 @@ import { Image } from 'astro:assets';
                 tracking-[-0.07em] leading-[0.9]">qué es els dissabtes?</h4>
     
                 <p class="font-['Poppins'] text-primary mt-5 mb-5
-                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
                     Lo que vemos a nuestra derecha es Xino, la mascota de nuestro evento. "Els Dissabtes, Cinema en Valencià" es un festival de cine dirigido al público infantil que se celebra en la sede de la ciudad universitaria de Alicante, del 25 de noviembre de 2024 al 13 de enero de 2025. Este festival tiene como objetivo promover el uso de la lengua valenciana a través de una programación cinematográfica adaptada para niños y niñas.
                 </p>
 
                 <p class="font-['Poppins'] text-primary mt-5 mb-5
-                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
                     Se trata de un proyecto universitario en el que se han solicitado numerosos entregables, tales como cartel publicitario, maquetación, logotipo, carpeta corporativa, así como objetos de merchandising como tazas, tote bags y camisetas...
                 </p>
             </p>
@@ -46,12 +42,12 @@ import { Image } from 'astro:assets';
                 tracking-[-0.07em] leading-[0.9]">herramientas</h4>
 
                 <p class="font-['Poppins'] text-primary mt-5 mb-5
-                text-md md:text-lg lg:text-lg xl:text-xl w-full lg:w-3/4">
+                text-md md:text-lg lg:text-lg xl:text-xl w-full">
                     Photoshop, Indesign y Illustrator
                 </p>
             </div>
             <div class="w-full">
-                <Picture src={bloom} formats={['avif','webp', 'png']} alt="Logotipo de Bloom" loading="lazy"/>
+                <Picture src={elsDissabtesMain} formats={['avif','webp', 'png']} alt="Logotipo de Bloom" loading="lazy" class="rounded-4xl"/>
             </div>
          </div>
     </div>
@@ -138,7 +134,7 @@ import { Image } from 'astro:assets';
                 <Picture src={elsDissabtesGrid3} alt="Taza de Els Dissabtes" class="w-full h-full" loading="lazy"/>
             </div>
             <div class="relative overflow-hidden">
-                <Picture src={elsDissabtesGrid1} alt="Tote Bag de Els Dissabtes (variante)" class="w-full h-full" loading="lazy"/>
+                <Picture src={elsDissabtesMag} alt="Tote Bag de Els Dissabtes (variante)" class="w-full h-full" loading="lazy"/>
             </div>
         </div>
     </div>
